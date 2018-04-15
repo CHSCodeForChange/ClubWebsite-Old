@@ -65,7 +65,7 @@
         margin-top: 0%;
     }
     
-    p {
+    p.home {
         font-size: 1.4rem !important;
     }
 }
@@ -78,7 +78,7 @@
         margin-top: 5%;
     }
     
-    p {
+    p.home {
         font-size: 1.4rem !important;
     }
 }
@@ -91,7 +91,7 @@
         margin-top: 10%;
     }
     
-    p {
+    p.home {
         font-size: 1.2rem !important;
     }
 }
