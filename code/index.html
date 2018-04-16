@@ -172,6 +172,7 @@
           var fade = $('.fade-in');
           var fade2 = $('.fade-in2');
           var img = $('.scroll-enlarge');
+          var icon = $('.service-icon');
           var displayH = window.innerHeight;
             
           var scroll = doc.scrollTop();
@@ -186,6 +187,24 @@
 
             $this.css('opacity', 2*(displayH+scroll-$this.offset().top)/($this.height()));
           });
+            
+          img.each(function() {
+                var $this = $(this);
+                
+                var width = Math.min(300, Math.max(250, 400*((displayH+scroll -$this.offset().top)/($this.height()))))
+                $this.css('max-width', width);
+                $this.css('margin-left', (300-width)/2)
+              });
+            
+          icon.each(function() {
+                var $this = $(this);
+                
+                var width = Math.min(120, Math.max(60, 200*((displayH+scroll -$this.offset().top)/($this.height()))))
+                $this.css('height', width);
+                $this.css('width', width);
+              });
+            
+            
         
 
           doc.on('scroll', function() {
@@ -199,7 +218,7 @@
               fade2.each(function() {
                 var $this = $(this);
                   
-                $this.css('opacity', 2*(displayH+scroll-$this.offset().top)/($this.height()));
+                $this.css('opacity', 3*(displayH+scroll-$this.offset().top)/($this.height()));
               });
               
               
@@ -209,6 +228,14 @@
                 var width = Math.min(300, Math.max(250, 400*((displayH+scroll -$this.offset().top)/($this.height()))))
                 $this.css('max-width', width);
                 $this.css('margin-left', (300-width)/2)
+              });
+              
+              icon.each(function() {
+                var $this = $(this);
+                
+                var width = Math.min(120, Math.max(60, 200*((displayH+scroll -$this.offset().top)/($this.height()))))
+                $this.css('height', width);
+                $this.css('width', width);
               });
           });
         });
