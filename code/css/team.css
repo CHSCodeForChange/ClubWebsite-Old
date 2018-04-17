@@ -163,4 +163,8 @@
     .subhead {
         font-size: 30px;
     }
+     p.description {
+        font-size: 150%; 
+        margin-top: 15%;
+    }
 }
