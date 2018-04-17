@@ -173,6 +173,7 @@
           var fade2 = $('.fade-in2');
           var img = $('.scroll-enlarge');
           var icon = $('.service-icon');
+          var circle = $('.bg-circle');
           var displayH = window.innerHeight;
             
           var scroll = doc.scrollTop();
@@ -237,6 +238,14 @@
                 $this.css('height', width);
                 $this.css('width', width);
               });
+              
+              circle.each(function() {
+                var $this = $(this);
+                
+                $this.css('margin', scroll);
+              });
+              
+              
           });
         });
     </script>
