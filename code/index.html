@@ -349,8 +349,7 @@
               circle.each(function() {
                 var $this = $(this);
                 
-                console.log($(window).width())
-                if ( $(window).width() > 1100) {  
+                if ( $(window).width() > 0) {  
                     $this.css('margin', scroll);
                 }
               });
