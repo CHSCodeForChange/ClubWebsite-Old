@@ -320,7 +320,12 @@
               fade.each(function() {
                 var $this = $(this);
                   
-                $this.css('opacity', (displayH+scroll-$this.offset().top)/($this.height()));
+                if ( $(window).width() > 1100){  
+                    $this.css('opacity', (displayH+scroll-$this.offset().top)/($this.height()));
+                } else {
+                    $this.css('opacity', 2*(displayH+scroll-$this.offset().top)/($this.height()));
+
+                }
               });
               
               fade2.each(function() {
