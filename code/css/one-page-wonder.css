@@ -48,6 +48,8 @@ h6 {
   letter-spacing: 0.1rem;
 }
 
+
+
 header.masthead {
   position: relative;
   overflow: hidden;
@@ -122,6 +124,31 @@ header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
   }
 }
+
+/*@media (min-width: 768px) {
+    button.navbar-toggler {
+        margin-left: 65.8224%;
+    }
+}
+
+@media (max-width: 767px) {
+    button.navbar-toggler {
+        margin-left: 54.4299%;
+    }
+}
+
+@media (max-width: 571px) {
+    button.navbar-toggler {
+        margin-left: 54.26%;
+    }
+}
+
+@media (max-width: 569px) {
+    button.navbar-toggler {
+        margin-left: 54.26%;
+    }
+}*/
+
 
 
 .btn-primary {
