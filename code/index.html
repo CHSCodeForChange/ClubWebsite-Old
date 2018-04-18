@@ -300,7 +300,7 @@
                 var $this = $(this);
                 
                 if ( $(window).width() > 1100){  
-                    var width = Math.min(300, Math.max(250, 400*((displayH+scroll -$this.offset().top)/($this.height()))))
+                    var width = Math.min(300, Math.max(250, 400*((displayH+scroll -$this.offset().top)/($this.height()))));
                     $this.css('max-width', width);
                     $this.css('margin-left', (300-width)/2)
                 }
@@ -308,6 +308,9 @@
             
           icon.each(function() {
                 var $this = $(this);
+              
+                var width = Math.min(120, Math.max(60, 200*((displayH+scroll -$this.offset().top)/($this.height()))));
+
                 
                 if ( $(window).width() > 1100){  
                     $this.css('height', width);
@@ -343,9 +346,9 @@
                 
                   
                 if ( $(window).width() > 1100){  
-                    var width = Math.min(300, Math.max(250, 400*((displayH+scroll -$this.offset().top)/($this.height()))))
+                    var width = Math.min(300, Math.max(250, 400*((displayH+scroll -$this.offset().top)/($this.height()))));
                     $this.css('max-width', width);
-                    $this.css('margin-left', (300-width)/2)
+                    $this.css('margin-left', (300-width)/2);
                 }
                 
               });
@@ -353,7 +356,7 @@
               icon.each(function() {
                 var $this = $(this);
                 
-                var width = Math.min(120, Math.max(60, 200*((displayH+scroll -$this.offset().top)/($this.height()))))
+                var width = Math.min(120, Math.max(60, 200*((displayH+scroll -$this.offset().top)/($this.height()))));
                 
                 if ( $(window).width() > 1100){  
                     $this.css('height', width);
@@ -364,10 +367,7 @@
               
               circle.each(function() {
                 var $this = $(this);
-                
-                if ( $(window).width() > 0) {  
                     $this.css('margin', scroll);
-                }
               });
               
               
