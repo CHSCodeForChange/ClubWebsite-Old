@@ -123,13 +123,18 @@ header.masthead .masthead-content .masthead-subheading {
   }
 }
 
-.bg-primary {
-  background-color: #0024AB !important;
-}
 
 .btn-primary {
   background-color: #0024AB;
   border-color: #0024AB;
+}
+
+.btn-project-types {
+  background-color: #fff;
+  border-color: #fff;
+  color: #555;
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
