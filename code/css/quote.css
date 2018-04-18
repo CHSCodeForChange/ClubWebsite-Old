@@ -1,0 +1,43 @@
+h1.quote {
+    font-size: 250%;
+}
+
+h3.byline {
+    font-size: 180%;
+    padding-top: 5%;
+    padding-left: 70%;
+}
+
+
+
+@media (max-width: 770px) {
+   h1.quote {
+    font-size: 200%;
+   }
+}
+
+@media (max-width: 500px) {
+    h1.quote {
+    font-size: 160%
+   }
+   h3.byline {
+    font-size: 130%;
+   }
+    
+   img.quotation {
+        width: 70px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1.quote {
+    font-size: 130%
+   }
+   h3.byline {
+    font-size: 100%;
+   }
+    
+    img.quotation {
+        width: 50px;
+    }
+}
